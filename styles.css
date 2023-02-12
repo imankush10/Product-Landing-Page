@@ -1,0 +1,216 @@
+/* CSS Reset */
+
+*, *::before, *::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  html{
+    scroll-behavior:smooth;
+  }
+  body{
+    background-color: #eee;
+    font-family: 'Lato', sans-serif;
+  }
+  
+  /* Navigation Bar */
+  
+  header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1rem;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:#eee;
+    z-index:99;
+  }
+  #header-img{
+    max-width:300px;
+  }
+  #nav-bar{
+    display:flex;
+  }
+  .nav-link{    text-decoration:none;
+    color:#000;
+    margin:0;
+    padding:0;  margin-inline-end:4vw;
+    font-size:1.1rem;
+    transition: all 0.5s ease;
+  }
+  
+  /* Heading Form */
+  .heading{
+    margin-top:6rem;
+    text-align:center;
+    font-weight:bold;
+    font-size:1.6rem;
+  }
+  #email{
+    display:block;
+    margin:1rem auto;
+    height:4vh;
+    width:38%;
+  }
+  #submit, .submit{
+    display:block;
+    background:#f1c40f;
+    border:none;
+    padding:0.5rem;
+    margin:auto;
+    font-weight:900;
+    max-width:120px;
+    width:100%;
+  }
+  /*Main Body*/
+  
+  .flex{
+    display:flex;
+    align-items:center;
+    margin-top:3rem;
+    transition:all 0.5s ease;
+  }
+  
+  .main-body{
+    margin-top:5rem;
+    margin-left:10rem;
+    margin-right:8rem;
+  }
+  
+  .icon{
+    color:orangered;
+    margin-right:2rem;
+  }
+  .description{
+    margin-left:1rem;
+    
+  }
+  .description h3{
+    font-size:1.3rem;
+  }
+  
+  .desc1{
+    position:relative;
+    left:1.5rem;
+  }
+  .desc3{
+    position:relative;
+    left:1rem;
+  }
+  #video{
+    display:block;
+    margin:5rem auto;
+    max-width:80vw;
+    width:60vw;
+    height:55vh;
+  }
+  #Pricing{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:4rem 12vw;
+  }
+  .box{
+    border:1px solid black;
+    margin:1rem;
+  }
+  .box h4{
+    background:#DDDDDD;
+    text-align:center;
+    padding:1rem;
+  }
+  .box h3{
+    text-align:center;
+    padding:1rem;
+  }
+  .box p{
+    text-align:center;
+    padding:0.6rem;
+  }
+  .submit{
+    margin:0.8rem auto;
+  }
+  
+  /* FOOTER */
+  
+  .footer{
+    background:#DDDDDD;
+    text-align:center;
+  }
+  .footer .links{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    padding:0.5rem;
+  }
+  .footer .links span{
+    transition:all ease 0.5s;
+    margin:0 2rem;
+  }
+  .footer .links span a{
+    text-decoration:none;
+    color:black;
+  }
+  .footer p{
+    padding:0.5rem;
+  }
+  
+  /* Effects*/
+  .nav-link:hover, span:hover{
+    background: rgba(0,0,0,0.1);
+    border-radius:5px;
+  }
+  #submit:hover, .submit:hover{
+    opacity:0.8;
+    cursor:pointer;
+  }
+  .flex:hover{
+    background:black;
+    color:white;
+    border-radius:20px;
+    padding:2rem;
+    width:75vw;
+  }
+  /* Media Queries*/
+  
+  @media (max-width:720px){
+  
+    #nav-bar{
+      flex-direction:column;
+      margin-inline-end:4vw;
+    }
+    .nav-link{
+      padding:0.1rem;
+    }
+    .heading{
+      margin-top:8rem;
+    }
+    .main-body{
+      margin-left:5rem;
+      margin-right:5rem;
+    }
+    #pricing{
+      display:block;
+    }
+  
+  }
+  
+  @media (max-width:550px){
+    header{
+      flex-direction:column;
+    }
+  
+    #nav-bar{
+      margin:0.6rem auto;
+      text-align:center;
+    }
+    .nav-link{
+      padding:0.1rem;
+    }
+    .heading{
+      margin-top:10rem;
+    } 
+  }
+  
